@@ -4491,14 +4491,14 @@ input[type="button"].btn-block {
 }
 
 .nav-tabs .nav-link.disabled {
-  color: #6c757d;
+  color: #7d6c6c;
   background-color: transparent;
   border-color: transparent;
 }
 
 .nav-tabs .nav-link.active,
 .nav-tabs .nav-item.show .nav-link {
-  color: #495057;
+  color: #574953;
   background-color: #fff;
   border-color: #dee2e6 #dee2e6 #fff;
 }
@@ -4940,32 +4940,6 @@ input[type="button"].btn-block {
   display: none;
 }
 
-.navbar-light .navbar-brand {
-  color: rgba(0, 0, 0, 0.9);
-}
-
-.navbar-light .navbar-brand:hover, .navbar-light .navbar-brand:focus {
-  color: rgba(0, 0, 0, 0.9);
-}
-
-.navbar-light .navbar-nav .nav-link {
-  color: rgba(0, 0, 0, 0.5);
-}
-
-.navbar-light .navbar-nav .nav-link:hover, .navbar-light .navbar-nav .nav-link:focus {
-  color: rgba(0, 0, 0, 0.7);
-}
-
-.navbar-light .navbar-nav .nav-link.disabled {
-  color: rgba(0, 0, 0, 0.3);
-}
-
-.navbar-light .navbar-nav .show > .nav-link,
-.navbar-light .navbar-nav .active > .nav-link,
-.navbar-light .navbar-nav .nav-link.show,
-.navbar-light .navbar-nav .nav-link.active {
-  color: rgba(0, 0, 0, 0.9);
-}
 
 .navbar-light .navbar-toggler {
   color: rgba(0, 0, 0, 0.5);
@@ -10983,7 +10957,7 @@ h1, h2, h3, h4, h5, h6 {
 
 @media (min-width: 992px) {
   .section-title {
-    font-size: 30px;
+    font-size: 15px;
   }
 }
 
@@ -10994,7 +10968,7 @@ h1, h2, h3, h4, h5, h6 {
 
 @media (min-width: 992px) {
   .subtitle {
-    font-size: 15px;
+    font-size: 25px ;
   }
 }
 
@@ -11658,12 +11632,11 @@ pre {
 }
 
 .header-title-dois {
-  color: #888888;
-  font-size: 40px;
+  color: #BCC3CD;
+  font-size: 26px !important;
 }
 
 .pl-titles {
-  color: #888888;
+  color: #BCC3CD;
 }
-
 
