@@ -67,7 +67,7 @@ body {
   line-height: 1.5;
   color: #fff;
   text-align: left;
-  background-color: #121723
+  background-color: #121723;
 }
 
 [tabindex="-1"]:focus {
@@ -11027,6 +11027,10 @@ pre {
   text-decoration: none;
 }
 
+.social-item {
+  color: #5b5ce2 !important;
+}
+
 .socials .social-item:hover {
   background: #39b46a;
   color: #fff;
@@ -11632,7 +11636,7 @@ pre {
 }
 
 .section:nth-child(even) {
-  background: white;
+  background: #121723;
 }
 
 .section.bg-white {
@@ -11640,7 +11644,7 @@ pre {
 }
 
 .section.bg-gray {
-  background: white;
+  background: #121723;
 }
 
 .nav-bar-title {
@@ -11651,6 +11655,15 @@ pre {
 
 .title-color {
   color: #2F9B5A;
+}
+
+.header-title-dois {
+  color: #888888;
+  font-size: 40px;
+}
+
+.pl-titles {
+  color: #888888;
 }
 
 
