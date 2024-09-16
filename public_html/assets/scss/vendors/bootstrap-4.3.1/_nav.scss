@@ -9,11 +9,13 @@
   padding-left: 0;
   margin-bottom: 0;
   list-style: none;
+
 }
 
-.nav-link {
+.nav-link  {
   display: block;
   padding: $nav-link-padding-y $nav-link-padding-x;
+  
 
   @include hover-focus {
     text-decoration: none;
