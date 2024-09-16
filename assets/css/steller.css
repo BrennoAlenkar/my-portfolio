@@ -4940,7 +4940,6 @@ input[type="button"].btn-block {
   display: none;
 }
 
-
 .navbar-light .navbar-toggler {
   color: rgba(0, 0, 0, 0.5);
   border-color: rgba(0, 0, 0, 0.1);
@@ -10992,13 +10991,14 @@ pre {
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  border: 2px solid #39b46a;
+  border: 2px solid #5b5ce2 ;
   color: #39b46a;
   text-align: center;
   line-height: 40px;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
   text-decoration: none;
+  
 }
 
 .social-item {
@@ -11006,7 +11006,7 @@ pre {
 }
 
 .socials .social-item:hover {
-  background: #39b46a;
+  background: #fff;
   color: #fff;
 }
 
