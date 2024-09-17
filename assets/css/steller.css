@@ -5479,6 +5479,7 @@ input[type="button"].btn-block {
   flex: 1 1 auto;
   padding: 1.25rem;
   cursor: pointer;
+  background-color: #FDFEFF;
 }
 
 .card-title {
@@ -12266,7 +12267,7 @@ pre {
 
 .custom-card:hover,
 .custom-card:active {
-  background: #39b46a;
+  background-color: #FDFDFE;
   color: #fff;
 }
 
@@ -12732,7 +12733,7 @@ pre {
 }
 
 .section:nth-child(even) {
-  background: #121723;
+  background-color: #F9FBFD;
 }
 
 .section.bg-white {
@@ -12802,5 +12803,19 @@ pre {
 }
 
 .card-title-icon {
-  color: #121416;
+  color: #AFAFAF;
+}
+
+.card-link {
+  text-decoration: none;
+}
+
+.sub-secundario {
+  color: #747C81;
+  font-size: 2em;
+}
+
+.pb-4 {
+  color: #747C81;
+  font-weight: 500;
 }
