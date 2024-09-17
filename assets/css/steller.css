@@ -5483,6 +5483,10 @@ input[type="button"].btn-block {
 
 }
 
+.card-body:hover {
+  background-color: #edeeef;
+}
+
 .card-title {
   margin-bottom: 0.75rem;
 }
@@ -12120,9 +12124,13 @@ pre {
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
   text-decoration: none;
-  background-color: #fff;
+  background-color: #FDFEFF;
   color: #121416 !important;
 
+}
+
+.socials .social-item:hover {
+  background-color: #D3D3D3;
 }
 
 .fa-linkedin {
@@ -12783,11 +12791,11 @@ pre {
 }
 
 .title-color {
-  color: #256ece;
+  color: #32A7E5;
 }
 
 .header-title-dois {
-  color: #BCC3CD;
+  color: #32A7E5;
   font-size: 26px !important;
 }
 
