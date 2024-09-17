@@ -12333,7 +12333,7 @@ pre {
   max-width: 1000px;
   margin: 0 auto 150px;
   z-index: 99;
-  background: #fff;
+  background: #FDFEFF;
 }
 
 .contact .form {
@@ -12343,6 +12343,7 @@ pre {
   flex-grow: 1;
   border-right: 1px solid #dee2e6;
   padding: 35px 30px 35px 0;
+  background-color: #FDFEFF;
 }
 
 .contact .form form {
@@ -12733,6 +12734,14 @@ pre {
   text-align: center;
   padding: 1rem;
   background: #ffcbbd;
+}
+
+#sub-title {
+  color: #121416 !important;
+}
+
+.contact-texts {
+  color: #AFAFAF;
 }
 
 .section {
