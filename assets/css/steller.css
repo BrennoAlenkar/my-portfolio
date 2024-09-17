@@ -12076,6 +12076,12 @@ h6 {
   opacity: .8;
 }
 
+.sub-title {
+  color: #121416;
+  font-size: 2em !important;
+  font-weight: 500 !important;
+}
+
 @media (min-width: 992px) {
   .subtitle {
     font-size: 25px;
