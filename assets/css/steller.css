@@ -5480,6 +5480,7 @@ input[type="button"].btn-block {
   padding: 1.25rem;
   cursor: pointer;
   background-color: #FDFEFF;
+
 }
 
 .card-title {
@@ -12101,7 +12102,7 @@ pre {
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  border: 2px solid #5b5ce2;
+  border: 2px solid #256ECE;
   color: #2A7AE4;
   text-align: center;
   line-height: 40px;
@@ -12111,13 +12112,18 @@ pre {
 
 }
 
+.fa-linkedin:hover {
+  color: #0A66C2;
+}
+
 .social-item {
   color: #5b5ce2 !important;
 }
 
-.socials .social-item:hover {
-  background: #fff;
-  color: #fff;
+
+.socials .social-item:hover{
+  background-color: #fff;
+  color: #0A66C2;
 }
 
 .btn {
@@ -12264,7 +12270,6 @@ pre {
   font-size: 40px;
   margin-bottom: 18px;
   color: #2A7AE4;
-
 }
 
 .custom-card:hover,
@@ -12515,7 +12520,8 @@ pre {
 }
 
 .page-footer {
-  background: #fcfdff;
+  background: #121416;
+  border-bottom: 6px solid #256ece;
 }
 
 .page-footer .row {
@@ -12768,6 +12774,7 @@ pre {
 .fa-brands {
   font-size: 21px;
   text-align: center;
+  color: #fff;
 }
 
 .fa-js {
@@ -12800,12 +12807,13 @@ pre {
   color: #E84E31 !important;
 }
 
-.fa-github {
-  color: #8236A3 !important;
-}
 
 .card-title-icon {
   color: #AFAFAF;
+}
+
+.card-title-icon:hover {
+  color: #B4BEC5;
 }
 
 .card-link {
@@ -12813,8 +12821,9 @@ pre {
 }
 
 .sub-secundario {
-  color: #747C81;
+  color: #121416;
   font-size: 2em;
+  font-weight: 700;
 }
 
 .pb-4 {
