@@ -2452,7 +2452,7 @@ pre code {
   background-color: #fff;
   border-color: #ffdfd7;
   outline: 0;
-  box-shadow: 0 0 0 0.2rem rgba(255, 122, 87, 0.25);
+  box-shadow: 0 0 0 0.2rem rgba(90, 204, 219, 0.25);
 }
 
 .form-control::-webkit-input-placeholder {
@@ -12145,7 +12145,7 @@ pre {
   color: #2ED14B !important;
 }
 
-.fa-instagram{
+.fa-instagram {
   color: #FF0872 !important;
 }
 
@@ -12864,4 +12864,12 @@ pre {
 .pb-4 {
   color: #747C81;
   font-weight: 500;
+}
+
+.footekr-lin:hover {
+  color: #0A66C2;
+}
+
+.contact-label {
+  color: #121416;
 }
