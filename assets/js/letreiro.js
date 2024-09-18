@@ -21,7 +21,7 @@
 
         // Inicia o efeito de digitação repetido quando o conteúdo da página estiver carregado
         document.addEventListener('DOMContentLoaded', () => {
-            const text = "I'm a software Engineer."; 
+            const text = "I'm a Software Engineer."; 
             const speed = 100; 
             const callback = () => typeWriter(text, 'marquee-text', speed, callback);
             typeWriter(text, 'marquee-text', speed, callback);
