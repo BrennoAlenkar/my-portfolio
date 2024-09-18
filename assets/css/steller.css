@@ -12580,7 +12580,7 @@ pre {
 }
 
 .header {
-  height: 94vh;
+  height: 100vh;
   min-height: 650px;
   border-bottom: 1px solid #dee2e6;
 }
@@ -12788,10 +12788,6 @@ pre {
   color: #fff;
   font-size: 1.6em;
   font-weight: 600;
-}
-
-.title-color {
-  color: #32A7E5;
 }
 
 .header-title-dois {
