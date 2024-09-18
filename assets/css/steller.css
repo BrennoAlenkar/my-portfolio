@@ -12670,6 +12670,10 @@ pre {
   }
 }
 
+.sub-title-m6 {
+  color: #fff;
+}
+
 .header .widget {
   position: relative;
   max-width: 650px;
