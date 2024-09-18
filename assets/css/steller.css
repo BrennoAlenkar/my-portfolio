@@ -9639,6 +9639,7 @@ button.bg-dark:focus {
 .mb-4,
 .my-4 {
   margin-bottom: 1.5rem !important;
+  color: #171a1d;
 }
 
 .ml-4,
@@ -12545,7 +12546,7 @@ pre {
 
 .page-footer {
   background: #121416;
-  border-bottom: 6px solid #256ece;
+  border-bottom: 7px solid #256ece;
 }
 
 .page-footer .row {
@@ -12764,7 +12765,7 @@ pre {
 }
 
 .contact-texts {
-  color: #AFAFAF;
+  color: #414345;
 }
 
 .section {
@@ -12797,6 +12798,7 @@ pre {
 
 .pl-titles {
   color: #BCC3CD;
+  text-align: justify;
 }
 
 .fa-brands {
