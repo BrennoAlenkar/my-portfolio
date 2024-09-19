@@ -2433,6 +2433,7 @@ pre code {
   border-radius: 0.25rem;
   -webkit-transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
   transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.06);
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -5480,7 +5481,7 @@ input[type="button"].btn-block {
   padding: 1.25rem;
   cursor: pointer;
   background-color: #FDFEFF;
-
+  box-shadow: 8px 8px 16px rgba(0, 0, 0, 0.06);
 }
 
 .card-body:hover {
