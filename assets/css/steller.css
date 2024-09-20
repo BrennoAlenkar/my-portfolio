@@ -12287,7 +12287,16 @@ pre {
   border-radius: 0.25rem;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
+  transform: translateX(100%); /* Começa fora da tela à esquerda */
+  opacity: 0; /* Começa invisível */
+  transition: transform 0.8s ease, opacity 1.8s ease; /* Transição suave */
 }
+
+.card-link.visible .custom-card {
+  transform: translateX(0); /* Move para a posição original */
+  opacity: 1; /* Fica visível */
+}
+
 
 .custom-card .card-body {
   padding: 55px 0;
@@ -12781,6 +12790,7 @@ pre {
 .section {
   position: relative;
   padding: 5rem 0;
+  overflow: hidden;
 }
 
 .section:nth-child(even) {
