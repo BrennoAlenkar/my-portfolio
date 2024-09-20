@@ -5482,11 +5482,14 @@ input[type="button"].btn-block {
   cursor: pointer;
   background-color: #FDFEFF;
   box-shadow: 8px 8px 16px rgba(0, 0, 0, 0.06);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .card-body:hover {
-  background-color: #edeeef;
+    transform: translateY(-10px); /* Move a div para cima */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Aumenta a sombra */
 }
+
 
 .card-title {
   margin-bottom: 0.75rem;
@@ -12299,8 +12302,9 @@ pre {
 
 .custom-card:hover,
 .custom-card:active {
-  background-color: #FDFDFE;
+  background-color: #F9FBFD !important;
   color: #fff;
+  border: none !important;
 }
 
 .custom-card:hover i,
@@ -12880,3 +12884,4 @@ pre {
 .title-color {
   color: #32A7E5;
 }
+
