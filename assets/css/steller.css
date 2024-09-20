@@ -12136,7 +12136,7 @@ pre {
 
 .socials .social-item:hover {
   background-color: #D3D3D3;
-  transform: translateY(-2px); /* Move a div para cima */
+  transform: translateY(-3px); /* Move a div para cima */
 }
 
 .fa-linkedin {
