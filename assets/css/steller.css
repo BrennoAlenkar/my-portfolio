@@ -12131,11 +12131,12 @@ pre {
   text-decoration: none;
   background-color: #FDFEFF;
   color: #121416 !important;
-
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .socials .social-item:hover {
   background-color: #D3D3D3;
+  transform: translateY(-2px); /* Move a div para cima */
 }
 
 .fa-linkedin {
