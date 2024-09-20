@@ -5486,8 +5486,10 @@ input[type="button"].btn-block {
 }
 
 .card-body:hover {
-    transform: translateY(-10px); /* Move a div para cima */
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Aumenta a sombra */
+  transform: translateY(-10px);
+  /* Move a div para cima */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  /* Aumenta a sombra */
 }
 
 
@@ -12136,7 +12138,8 @@ pre {
 
 .socials .social-item:hover {
   background-color: #D3D3D3;
-  transform: translateY(-3px); /* Move a div para cima */
+  transform: translateY(-3px);
+  /* Move a div para cima */
 }
 
 .fa-linkedin {
@@ -12287,14 +12290,14 @@ pre {
   border-radius: 0.25rem;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
-  transform: translateX(100%); /* Começa fora da tela à esquerda */
-  opacity: 0; /* Começa invisível */
-  transition: transform 0.8s ease, opacity 1.8s ease; /* Transição suave */
+  transform: translateX(100%);
+  opacity: 0;
+  transition: transform 0.5s ease, opacity 1.0s ease;
 }
 
 .card-link.visible .custom-card {
-  transform: translateX(0); /* Move para a posição original */
-  opacity: 1; /* Fica visível */
+  transform: translateX(0);
+  opacity: 1;
 }
 
 
@@ -12329,6 +12332,14 @@ pre {
   max-width: 700px;
   margin: 10px auto;
   padding: 20px 15px;
+}
+
+@media (max-width: 600px) {
+  .custom-card {
+    width: 100%;
+    transform: translateX(0);
+    opacity: 1;
+  }
 }
 
 .testmonial-card img {
@@ -12895,4 +12906,3 @@ pre {
 .title-color {
   color: #32A7E5;
 }
-
