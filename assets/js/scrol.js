@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
-    const cards = document.querySelectorAll('.custom-card');
+    const cards = document.querySelectorAll('.custom-card'); // Seletor para os cartões
 
     const options = {
         root: null,
@@ -20,5 +20,4 @@ document.addEventListener('DOMContentLoaded', () => {
     cards.forEach(card => {
         observer.observe(card);
     });
-    
 });

@@ -12286,13 +12286,12 @@ pre {
   padding-right: 5px;
 }
 
+
 .custom-card {
   border-radius: 0.25rem;
-  -webkit-transition: all 0.3s;
-  transition: all 0.3s;
   transform: translateX(100%);
   opacity: 0;
-  transition: transform 0.5s ease, opacity 1.0s ease;
+  transition: transform 1s ease, opacity 1.5s ease; /* Ajuste aqui */
 }
 
 .card-link.visible .custom-card {
@@ -12300,6 +12299,29 @@ pre {
   opacity: 1;
 }
 
+.scroll-effect {
+  transition: transform 1s ease, opacity 1.5s ease; /* Ajuste aqui se necessário */
+}
+
+.scroll-effect {
+  opacity: 0; /* Começa invisível */
+  transform: translateX(-90px); /* Começa um pouco à esquerda */
+  transition: opacity 0.6s ease, transform 1.0s ease; /* Duração e suavidade */
+}
+
+.scroll-effect.visible {
+  opacity: 1; /* Fica visível */
+  transform: translateX(0); /* Move para a posição original */
+}
+
+/* Estilo adicional para telas menores */
+@media (max-width: 768px) {
+  .scroll-effect {
+      transform: translateX(0); /* Remove o efeito de entrada em telas pequenas */
+      opacity: 1; /* Faz com que o conteúdo apareça imediatamente */
+      margin: 15px;
+  }
+}
 
 .custom-card .card-body {
   padding: 55px 0;
