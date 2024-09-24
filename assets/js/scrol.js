@@ -1,5 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
     const cards = document.querySelectorAll('.custom-card'); // Seletor para os cartões
+    
 
     const options = {
         root: null,
