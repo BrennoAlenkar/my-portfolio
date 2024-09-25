@@ -12286,7 +12286,6 @@ pre {
   padding-right: 5px;
 }
 
-
 .custom-card {
   border-radius: 0.25rem;
   transform: translateX(100%);
@@ -12319,7 +12318,7 @@ pre {
   .scroll-effect {
       transform: translateX(0); /* Remove o efeito de entrada em telas pequenas */
       opacity: 1; /* Faz com que o conteúdo apareça imediatamente */
-      margin: 15px;
+      margin: 20px;
   }
 }
 
