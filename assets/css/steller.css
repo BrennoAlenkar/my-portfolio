@@ -12290,7 +12290,8 @@ pre {
   border-radius: 0.25rem;
   transform: translateX(100%);
   opacity: 0;
-  transition: transform 1s ease, opacity 1.5s ease; /* Ajuste aqui */
+  transition: transform 1s ease, opacity 1.5s ease;
+  /* Ajuste aqui */
 }
 
 .card-link.visible .custom-card {
@@ -12299,26 +12300,34 @@ pre {
 }
 
 .scroll-effect {
-  transition: transform 1s ease, opacity 1.5s ease; /* Ajuste aqui se necessário */
+  transition: transform 1s ease, opacity 1.5s ease;
+  /* Ajuste aqui se necessário */
 }
 
 .scroll-effect {
-  opacity: 0; /* Começa invisível */
-  transform: translateX(-90px); /* Começa um pouco à esquerda */
-  transition: opacity 0.6s ease, transform 1.0s ease; /* Duração e suavidade */
+  opacity: 0;
+  /* Começa invisível */
+  transform: translateX(-90px);
+  /* Começa um pouco à esquerda */
+  transition: opacity 0.6s ease, transform 1.0s ease;
+  /* Duração e suavidade */
 }
 
 .scroll-effect.visible {
-  opacity: 1; /* Fica visível */
-  transform: translateX(0); /* Move para a posição original */
+  opacity: 1;
+  /* Fica visível */
+  transform: translateX(0);
+  /* Move para a posição original */
 }
 
 /* Estilo adicional para telas menores */
 @media (max-width: 768px) {
   .scroll-effect {
-      transform: translateX(0); /* Remove o efeito de entrada em telas pequenas */
-      opacity: 1; /* Faz com que o conteúdo apareça imediatamente */
-      margin: 20px;
+    transform: translateX(0);
+    /* Remove o efeito de entrada em telas pequenas */
+    opacity: 1;
+    /* Faz com que o conteúdo apareça imediatamente */
+    margin: 20px;
   }
 }
 
