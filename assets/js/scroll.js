@@ -1,17 +1,17 @@
 document.addEventListener('DOMContentLoaded', () => {
-    const cards = document.querySelectorAll('.custom-card'); // Seletor para os cartões
+    const cards = document.querySelectorAll('.custom-card'); 
     
 
     const options = {
         root: null,
         rootMargin: '0px',
-        threshold: 0.1 // 10% do cartão visível
+        threshold: 0.1 
     };
 
     const callback = (entries) => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
-                entry.target.parentNode.classList.add('visible'); // Adiciona a classe ao pai (card-link)
+                entry.target.parentNode.classList.add('visible');
             }
         });
     };

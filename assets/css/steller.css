@@ -5487,9 +5487,7 @@ input[type="button"].btn-block {
 
 .card-body:hover {
   transform: translateY(-10px);
-  /* Move a div para cima */
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-  /* Aumenta a sombra */
 }
 
 
