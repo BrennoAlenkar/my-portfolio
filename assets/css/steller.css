@@ -1072,6 +1072,10 @@ pre code {
     max-width: 66.66667%;
   }
 
+  .ti-zoom-in {
+    color: #256ECE;
+  } 
+
   .col-sm-9 {
     -webkit-box-flex: 0;
     -webkit-flex: 0 0 75%;
