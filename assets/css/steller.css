@@ -9685,6 +9685,10 @@ button.bg-dark:focus {
   margin-left: 3rem !important;
 }
 
+#mb-12 {
+  color: #000000;
+}
+
 .p-0 {
   padding: 0 !important;
 }
@@ -12871,7 +12875,7 @@ pre {
 }
 
 .pl-titles {
-  color: #BCC3CD;
+  color: #fff;
   text-align: justify;
 }
 
@@ -12934,8 +12938,9 @@ pre {
 }
 
 .pb-4 {
-  color: #747C81;
+  color: #fff;
   font-weight: 500;
+  padding: 10px;
 }
 
 .footekr-lin:hover {
