@@ -12424,6 +12424,10 @@ pre {
   background: #FDFEFF;
 }
 
+.about-me {
+  color: #2A7AE4;
+}
+
 .contact .form {
   -webkit-box-flex: 1;
   -webkit-flex-grow: 1;
