@@ -12312,6 +12312,10 @@ pre {
   /* Ajuste aqui se necessário */
 }
 
+.cart-projetos {
+  border: 2px solid blue;
+}
+
 .scroll-effect {
   opacity: 0;
   /* Começa invisível */
