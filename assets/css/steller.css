@@ -5496,7 +5496,6 @@ input[type="button"].btn-block {
 }
 
 .card-body:hover {
-  transform: translateY(-10px);
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
