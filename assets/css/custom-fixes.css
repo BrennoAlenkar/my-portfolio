@@ -905,4 +905,9 @@
     }
 }
 
+/* Ajuste da posição da foto no header */
+.header .img-holder img {
+    margin-top: 30px;
+}
+
 
