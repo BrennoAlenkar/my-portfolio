@@ -923,8 +923,10 @@
 }
 
 .btn-primary:hover {
-    background-color: #0651C7 !important;
-    border-color: #0651C7 !important;
+    background-color: #075FE4 !important;
+    border-color: #075FE4 !important;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(7, 95, 228, 0.4);
 }
 
 .text-primary {
@@ -966,7 +968,7 @@
 }
 
 .header .infos .header-description {
-    margin-top: 1rem !important;
+    margin-top: 0.5rem !important;
     margin-bottom: 1rem;
 }
 
@@ -978,6 +980,21 @@
 .header .infos .socials {
     margin-top: 1rem !important;
     margin-bottom: 0;
+}
+
+/* Melhorar hover dos botões */
+.btn {
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    transform: translateY(-2px);
+}
+
+.btn-dark:hover {
+    background-color: #333333 !important;
+    border-color: #333333 !important;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
 }
 
 
