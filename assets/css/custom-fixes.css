@@ -463,19 +463,18 @@
 /* Ajustes específicos para o footer */
 .page-footer .row {
     align-items: center;
-    justify-content: center;
-    text-align: center;
+    justify-content: space-between;
+    text-align: left;
 }
 
 .page-footer .col-sm-6 {
-    text-align: center;
     display: flex;
-    justify-content: center;
     align-items: center;
 }
 
 .page-footer .col-sm-6:first-child {
-    justify-content: center;
+    justify-content: flex-start;
+    text-align: left;
 }
 
 .page-footer .col-sm-6:last-child {
@@ -487,7 +486,7 @@
 .page-footer .socials {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-end;
     flex-wrap: nowrap;
     gap: 10px;
     margin-left: 20px;
@@ -528,6 +527,7 @@
     margin: 0;
     color: rgba(255, 255, 255, 0.8);
     font-size: 14px;
+    text-align: left;
 }
 
 .footer-link {
