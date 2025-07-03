@@ -122,29 +122,58 @@
                             <p class="pl-titles">
                                 Desenvolvedor de Software com 2 anos de experiência em desenvolvimento, especializado na criação
                                 de soluções web modernas, escaláveis e orientadas à performance. Possuo sólida atuação com
-                                JavaScript e React.js, além de PHP, sempre aplicando boas práticas de Clean Code, princípios
+                                <i class="fab fa-js-square text-warning"></i> JavaScript e 
+                                <i class="fab fa-react text-info"></i> React.js, além de 
+                                <i class="fab fa-php text-primary"></i> PHP, sempre aplicando boas práticas de Clean Code, princípios
                                 SOLID e padrões de projeto para garantir código de alta qualidade e fácil manutenção.
                             </p>
                             
-                            <p class="pl-titles">
-                                <strong>Back-end:</strong> Desenvolvimento de APIs RESTful e sistemas robustos em PHP, integração eficiente com
-                                bancos de dados relacionais (MySQL) e aplicação de práticas avançadas de segurança e otimização
-                                de performance.
-                            </p>
+                            <div class="skills-section mb-4">
+                                <div class="skill-item">
+                                    <i class="fas fa-server text-success"></i>
+                                    <strong>Back-end:</strong> Desenvolvimento de APIs RESTful e sistemas robustos em 
+                                    <i class="fab fa-php text-primary"></i> PHP, integração eficiente com
+                                    bancos de dados relacionais (<i class="fas fa-database text-warning"></i> MySQL) e aplicação de práticas avançadas de segurança e otimização
+                                    de performance.
+                                </div>
+                                
+                                <div class="skill-item">
+                                    <i class="fas fa-palette text-info"></i>
+                                    <strong>Front-end:</strong> Construção de interfaces responsivas e interativas com 
+                                    <i class="fab fa-react text-info"></i> React, 
+                                    <i class="fab fa-html5 text-danger"></i> HTML5, 
+                                    <i class="fab fa-css3-alt text-primary"></i> CSS3 e 
+                                    <i class="fab fa-bootstrap text-primary"></i> Bootstrap, priorizando usabilidade
+                                    (UX), acessibilidade e design limpo para proporcionar a melhor experiência ao usuário.
+                                </div>
+                                
+                                <div class="skill-item">
+                                    <i class="fas fa-code-branch text-warning"></i>
+                                    <strong>Versionamento e Deploy:</strong> Gerenciamento de código-fonte com 
+                                    <i class="fab fa-git-alt text-danger"></i> Git e 
+                                    <i class="fab fa-github text-dark"></i> GitHub, participação em
+                                    pipelines de integração e entrega contínua (CI/CD) e deploy de aplicações em ambientes de
+                                    produção.
+                                </div>
+                            </div>
+
+                            <div class="skills-highlights mt-4 mb-4">
+                                <h5 class="mb-3"><i class="fas fa-tools text-primary me-2"></i>Principais Tecnologias:</h5>
+                                <div class="d-flex flex-wrap gap-2">
+                                    <span class="skill-badge"><i class="fab fa-js-square text-warning"></i> JavaScript</span>
+                                    <span class="skill-badge"><i class="fab fa-react text-info"></i> React.js</span>
+                                    <span class="skill-badge"><i class="fab fa-php text-primary"></i> PHP</span>
+                                    <span class="skill-badge"><i class="fab fa-node text-success"></i> Node.js</span>
+                                    <span class="skill-badge"><i class="fas fa-database text-info"></i> MySQL</span>
+                                    <span class="skill-badge"><i class="fab fa-git-alt text-danger"></i> Git</span>
+                                    <span class="skill-badge"><i class="fab fa-bootstrap text-purple"></i> Bootstrap</span>
+                                    <span class="skill-badge"><i class="fab fa-html5 text-orange"></i> HTML5</span>
+                                    <span class="skill-badge"><i class="fab fa-css3-alt text-blue"></i> CSS3</span>
+                                </div>
+                            </div>
 
                             <p class="pl-titles">
-                                <strong>Front-end:</strong> Construção de interfaces responsivas e interativas com React, priorizando usabilidade
-                                (UX), acessibilidade e design limpo para proporcionar a melhor experiência ao usuário.
-                            </p>
-
-                            <p class="pl-titles">
-                                <strong>Versionamento e Deploy:</strong> Gerenciamento de código-fonte com Git e GitHub, participação em
-                                pipelines de integração e entrega contínua (CI/CD) e deploy de aplicações em ambientes de
-                                produção.
-                            </p>
-
-                            <p class="pl-titles">
-                                Sou um profissional comprometido, com excelente comunicação, perfil colaborativo e foco em
+                                <i class="fas fa-handshake text-success me-2"></i>Sou um profissional comprometido, com excelente comunicação, perfil colaborativo e foco em
                                 evolução contínua. Busco sempre agregar valor aos projetos em que atuo, contribuindo para
                                 resultados sólidos e inovadores.
                             </p>
@@ -271,9 +300,11 @@
         <!-- Portfolio section -->
         <section id="portfolio" class="section">
             <div class="container text-center">
-                <h2 class="subtitle sub-title-one sub-title-m6">Portfólio</h2>
+                <h2 class="subtitle sub-title-one sub-title-m6">
+                    <i class="fas fa-briefcase text-primary me-2"></i>Portfólio
+                </h2>
                 <p class="mb-5 pb-4">
-                    Explore os projetos que desenvolvi e colaborei no meu GitHub. Veja as soluções e
+                    <i class="fas fa-rocket text-warning me-2"></i>Explore os projetos que desenvolvi e colaborei no meu GitHub. Veja as soluções e
                     inovações que implementei e descubra como elas podem agregar valor às suas necessidades.
                 </p>
 
@@ -284,8 +315,14 @@
                             <div class="overlay">
                                 <div class="overlay-infos">
                                     <h5>Shopping Cart</h5>
-                                    <a href="https://shopping-cart-main-umber.vercel.app/" target="_blank" aria-label="Ver projeto Shopping Cart">
-                                        <i class="ti-zoom-in"></i>
+                                    <div class="project-tech mb-2">
+                                        <span class="tech-tag"><i class="fab fa-react text-info"></i> React</span>
+                                        <span class="tech-tag"><i class="fab fa-js-square text-warning"></i> JavaScript</span>
+                                        <span class="tech-tag"><i class="fab fa-css3-alt text-blue"></i> CSS3</span>
+                                    </div>
+                                    <p class="project-description">Sistema de carrinho de compras com React</p>
+                                    <a href="https://shopping-cart-main-umber.vercel.app/" target="_blank" aria-label="Ver projeto Shopping Cart" class="btn btn-primary btn-sm">
+                                        <i class="fas fa-external-link-alt me-1"></i>Ver Projeto
                                     </a>
                                 </div>
                             </div>
@@ -297,8 +334,14 @@
                             <div class="overlay">
                                 <div class="overlay-infos">
                                     <h5>Cardápio Online</h5>
-                                    <a href="https://cardapio-five-umber.vercel.app/" target="_blank" aria-label="Ver projeto Cardápio Online">
-                                        <i class="ti-zoom-in"></i>
+                                    <div class="project-tech mb-2">
+                                        <span class="tech-tag"><i class="fab fa-html5 text-orange"></i> HTML5</span>
+                                        <span class="tech-tag"><i class="fab fa-css3-alt text-blue"></i> CSS3</span>
+                                        <span class="tech-tag"><i class="fab fa-js-square text-warning"></i> JavaScript</span>
+                                    </div>
+                                    <p class="project-description">Menu interativo para restaurante</p>
+                                    <a href="https://cardapio-five-umber.vercel.app/" target="_blank" aria-label="Ver projeto Cardápio Online" class="btn btn-primary btn-sm">
+                                        <i class="fas fa-external-link-alt me-1"></i>Ver Projeto
                                     </a>
                                 </div>
                             </div>
@@ -310,8 +353,14 @@
                             <div class="overlay">
                                 <div class="overlay-infos">
                                     <h5>Landing Page</h5>
-                                    <a href="https://rayal-park-main-main.vercel.app/" target="_blank" aria-label="Ver projeto Landing Page">
-                                        <i class="ti-zoom-in"></i>
+                                    <div class="project-tech mb-2">
+                                        <span class="tech-tag"><i class="fab fa-html5 text-orange"></i> HTML5</span>
+                                        <span class="tech-tag"><i class="fab fa-css3-alt text-blue"></i> CSS3</span>
+                                        <span class="tech-tag"><i class="fab fa-bootstrap text-purple"></i> Bootstrap</span>
+                                    </div>
+                                    <p class="project-description">Landing page responsiva e moderna</p>
+                                    <a href="https://rayal-park-main-main.vercel.app/" target="_blank" aria-label="Ver projeto Landing Page" class="btn btn-primary btn-sm">
+                                        <i class="fas fa-external-link-alt me-1"></i>Ver Projeto
                                     </a>
                                 </div>
                             </div>
@@ -323,8 +372,14 @@
                             <div class="overlay">
                                 <div class="overlay-infos">
                                     <h5>Animes</h5>
-                                    <a href="https://organo-two-vert.vercel.app/" target="_blank" aria-label="Ver projeto Animes">
-                                        <i class="ti-zoom-in"></i>
+                                    <div class="project-tech mb-2">
+                                        <span class="tech-tag"><i class="fab fa-react text-info"></i> React</span>
+                                        <span class="tech-tag"><i class="fab fa-js-square text-warning"></i> JavaScript</span>
+                                        <span class="tech-tag"><i class="fab fa-css3-alt text-blue"></i> CSS3</span>
+                                    </div>
+                                    <p class="project-description">Aplicação para organizar animes favoritos</p>
+                                    <a href="https://organo-two-vert.vercel.app/" target="_blank" aria-label="Ver projeto Animes" class="btn btn-primary btn-sm">
+                                        <i class="fas fa-external-link-alt me-1"></i>Ver Projeto
                                     </a>
                                 </div>
                             </div>
@@ -335,9 +390,15 @@
                             <img src="assets/imgs/landing.png" alt="Projeto Landing Page Corporativa">
                             <div class="overlay">
                                 <div class="overlay-infos">
-                                    <h5>Landing Page</h5>
-                                    <a href="https://landing-page-hazel-eta.vercel.app/" target="_blank" aria-label="Ver projeto Landing Page Corporativa">
-                                        <i class="ti-zoom-in"></i>
+                                    <h5>Landing Page Corporativa</h5>
+                                    <div class="project-tech mb-2">
+                                        <span class="tech-tag"><i class="fab fa-html5 text-orange"></i> HTML5</span>
+                                        <span class="tech-tag"><i class="fab fa-css3-alt text-blue"></i> CSS3</span>
+                                        <span class="tech-tag"><i class="fab fa-js-square text-warning"></i> JavaScript</span>
+                                    </div>
+                                    <p class="project-description">Landing page profissional para empresa</p>
+                                    <a href="https://landing-page-hazel-eta.vercel.app/" target="_blank" aria-label="Ver projeto Landing Page Corporativa" class="btn btn-primary btn-sm">
+                                        <i class="fas fa-external-link-alt me-1"></i>Ver Projeto
                                     </a>
                                 </div>
                             </div>
@@ -351,29 +412,41 @@
         <!-- Contact Section -->
         <section id="contact" class="section">
             <div class="container text-center">
-                <h2 class="subtitle sub-title">Contato</h2>
+                <h2 class="subtitle sub-title">
+                    <i class="fas fa-envelope text-primary me-2"></i>Contato
+                </h2>
                 <p class="mb-5 pb-4">
-                    Vamos conversar! Tem alguma ideia ou pergunta? Preencha o formulário ou
+                    <i class="fas fa-comments text-info me-2"></i>Vamos conversar! Tem alguma ideia ou pergunta? Preencha o formulário ou
                     envie um e-mail, estou à disposição!
                 </p>
 
                 <div class="contact text-left">
                     <div class="form">
-                        <h3 class="subtitle">Fale Comigo</h3>
+                        <h3 class="subtitle">
+                            <i class="fas fa-paper-plane text-success me-2"></i>Fale Comigo
+                        </h3>
                         <form action="https://formsubmit.co/brennoalencar79@gmail.com" method="POST">
                             <div class="form-group">
-                                <label class="contact-label" for="name">Nome</label>
+                                <label class="contact-label" for="name">
+                                    <i class="fas fa-user text-primary me-2"></i>Nome
+                                </label>
                                 <input type="text" class="form-control" id="name" name="name" placeholder="Digite seu nome" required>
                             </div>
                             <div class="form-group">
-                                <label class="contact-label" for="email">E-mail</label>
+                                <label class="contact-label" for="email">
+                                    <i class="fas fa-envelope text-info me-2"></i>E-mail
+                                </label>
                                 <input type="email" class="form-control" id="email" name="email" placeholder="Digite seu e-mail" required>
                             </div>
                             <div class="form-group">
-                                <label class="contact-label" for="message">Mensagem</label>
+                                <label class="contact-label" for="message">
+                                    <i class="fas fa-comment-dots text-warning me-2"></i>Mensagem
+                                </label>
                                 <textarea id="message" name="message" cols="30" rows="5" class="form-control" placeholder="Sua mensagem" required></textarea>
                             </div>
-                            <button type="submit" class="btn btn-primary btn-block rounded">Enviar mensagem</button>
+                            <button type="submit" class="btn btn-primary btn-block rounded">
+                                <i class="fas fa-paper-plane me-2"></i>Enviar mensagem
+                            </button>
                         </form>
                     </div>
                     <div class="contact-infos">

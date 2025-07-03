@@ -109,3 +109,52 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 });
+
+// Animação para skills badges
+function animateSkillsBadges() {
+    const skillsBadges = document.querySelectorAll('.skill-badge');
+    
+    skillsBadges.forEach((badge, index) => {
+        badge.style.opacity = '0';
+        badge.style.transform = 'translateY(20px)';
+        
+        setTimeout(() => {
+            badge.style.transition = 'all 0.6s ease';
+            badge.style.opacity = '1';
+            badge.style.transform = 'translateY(0)';
+        }, index * 100);
+    });
+}
+
+// Observador para animar skills quando entrarem na viewport
+const skillsObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            animateSkillsBadges();
+            skillsObserver.unobserve(entry.target);
+        }
+    });
+}, { threshold: 0.3 });
+
+// Observar seção de skills
+document.addEventListener('DOMContentLoaded', () => {
+    const skillsHighlights = document.querySelector('.skills-highlights');
+    if (skillsHighlights) {
+        skillsObserver.observe(skillsHighlights);
+    }
+});
+
+// Efeito de hover nas skill-items
+document.addEventListener('DOMContentLoaded', () => {
+    const skillItems = document.querySelectorAll('.skill-item');
+    
+    skillItems.forEach(item => {
+        item.addEventListener('mouseenter', () => {
+            item.style.transform = 'translateY(-3px) scale(1.02)';
+        });
+        
+        item.addEventListener('mouseleave', () => {
+            item.style.transform = 'translateY(0) scale(1)';
+        });
+    });
+});
