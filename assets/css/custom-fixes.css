@@ -779,18 +779,17 @@
     min-height: 180px;
 }
 
-/* Garantir visibilidade dos cards de certificados */
+/* Garantir visibilidade dos cards */
 .custom-card {
     display: block !important;
     visibility: visible !important;
     opacity: 1 !important;
-    height: 100% !important;
     background: linear-gradient(135deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.05) 100%) !important;
     border: 1px solid rgba(255, 255, 255, 0.2) !important;
     border-radius: 15px !important;
-    transition: all 0.3s ease;
-    overflow: hidden;
-    min-height: 180px;
+    height: 100% !important;
+    min-height: 180px !important;
+    transition: all 0.3s ease !important;
 }
 
 .custom-card .card-body {
@@ -798,22 +797,19 @@
     flex-direction: column !important;
     align-items: center !important;
     justify-content: center !important;
-    height: 100% !important;
     padding: 1.5rem !important;
-    text-align: center !important;
+    height: 100% !important;
 }
 
 .card-icon {
     display: block !important;
     margin-bottom: 1rem !important;
-    margin-top: -0.5rem !important;
 }
 
 .card-icon i {
     font-size: 2.5rem !important;
     color: #075FE4 !important;
-    transition: all 0.3s ease;
-    display: inline-block !important;
+    display: block !important;
 }
 
 .card-title-icon {
@@ -821,17 +817,14 @@
     font-size: 1.1rem !important;
     font-weight: 500 !important;
     margin-bottom: 0.5rem !important;
-    text-align: center !important;
     display: block !important;
 }
 
 .card-course-name {
-    color: #888888 !important;
+    color: #6c757d !important;
     font-size: 0.9rem !important;
     font-weight: 400 !important;
-    text-align: center !important;
     margin-bottom: 0 !important;
-    line-height: 1.4 !important;
     display: block !important;
 }
 
@@ -887,8 +880,6 @@
         font-size: 0.8rem;
     }
 }
-
-/* Existing styles... */
 
 .contact-description {
     color: #333333 !important;
