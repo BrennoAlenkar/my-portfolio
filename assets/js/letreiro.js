@@ -11,7 +11,7 @@ function typeWriter(text, elementId, speed, callback) {
             setTimeout(() => {
                 element.innerHTML = '';
                 callback();
-            }, 1000);
+            }, 1500);
         }
     }
 
@@ -19,8 +19,27 @@ function typeWriter(text, elementId, speed, callback) {
 }
 
 document.addEventListener('DOMContentLoaded', () => {
-    const text = "I'm a Software Engineer.";
+    const mainText = "I'm a Software Engineer.";
+    const binaryText = "01001010 01100101 01110011 01110101 01110011";
     const speed = 100;
-    const callback = () => typeWriter(text, 'marquee-text', speed, callback);
-    typeWriter(text, 'marquee-text', speed, callback);
+    const binarySpeed = 80;
+    let currentText = mainText;
+    let isMainText = true;
+
+    function alternateText() {
+        if (isMainText) {
+            // Próximo será o texto binário
+            currentText = binaryText;
+            isMainText = false;
+            typeWriter(currentText, 'marquee-text', binarySpeed, alternateText);
+        } else {
+            // Próximo será o texto principal
+            currentText = mainText;
+            isMainText = true;
+            typeWriter(currentText, 'marquee-text', speed, alternateText);
+        }
+    }
+
+    // Inicia com o texto principal
+    typeWriter(mainText, 'marquee-text', speed, alternateText);
 });
