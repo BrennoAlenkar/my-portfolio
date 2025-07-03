@@ -693,7 +693,7 @@
 
 /* Certificates Section Improvements */
 .certificates-description {
-    color: inherit !important;
+    color: #333333 !important;
     font-size: 1.2rem;
     font-weight: 500;
     line-height: 1.6;
