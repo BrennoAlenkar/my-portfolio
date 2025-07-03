@@ -941,9 +941,10 @@
     border-radius: 8px;
 }
 
-#contact .btn-primary:hover {
+#contact .btn-primary:active {
     background-color: #0653c7 !important;
     border-color: #0653c7 !important;
+    transform: scale(0.98);
 }
 
 /* ===== MEDIA QUERIES RESPONSIVOS ===== */
