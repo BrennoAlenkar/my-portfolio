@@ -1,10 +1,14 @@
 /* Estilos customizados para correções */
 
-/* Correção do título - manter Brenno Alencar na mesma linha e diminuir tamanho */
+/* Correção do título - manter Brenno Alencar na mesma linha */
 .header .title {
-    white-space: nowrap;
-    font-size: calc(16px + (22 - 16) * ((100vw - 320px) / (1200 - 320)));
+    white-space: nowrap !important;
+    font-size: calc(18px + (28 - 18) * ((100vw - 320px) / (1200 - 320)));
     line-height: 1.2;
+    text-align: center;
+    margin: 0 auto;
+    display: block;
+    overflow: visible;
 }
 
 /* Animação da imagem - efeito flutuante simples */
@@ -784,6 +788,46 @@
     max-width: 90%;
 }
 
+/* Garantir centralização perfeita no mobile */
+@media (max-width: 576px) {
+    .header .col-lg-6:first-child {
+        text-align: center !important;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .header .infos {
+        width: 100%;
+        max-width: 100%;
+        text-align: center !important;
+    }
+    
+    .header .title {
+        font-size: 24px !important;
+        white-space: nowrap !important;
+        text-align: center !important;
+        margin: 0 auto !important;
+        display: inline-block;
+        min-width: fit-content;
+    }
+    
+    .header .subtitle {
+        text-align: center !important;
+        margin: 0 auto !important;
+    }
+    
+    .header .marquee-container {
+        text-align: center !important;
+        margin: 0 auto !important;
+    }
+    
+    .header-title-dois {
+        text-align: center !important;
+    }
+}
+
 /* Ajuste da posição da foto no header */
 .header .img-holder img {
     margin-top: 60px;
@@ -1051,12 +1095,21 @@
 @media (max-width: 576px) {
     .header {
         padding: 80px 0 40px;
+        text-align: center;
+    }
+    
+    .header .infos {
+        text-align: center;
     }
     
     .header .title {
-        font-size: 18px;
+        font-size: 24px !important;
         white-space: nowrap;
         text-align: center;
+        margin: 0 auto;
+        overflow: hidden;
+        display: block;
+        width: 100%;
     }
     
     .header .subtitle {
@@ -1068,6 +1121,7 @@
         font-size: 14px;
         text-align: center;
         padding: 0 1rem;
+        margin: 1rem auto;
     }
     
     .header .buttons {
@@ -1195,7 +1249,9 @@
     }
     
     .header .title {
-        font-size: 16px;
+        font-size: 20px !important;
+        white-space: nowrap;
+        text-align: center;
     }
     
     .header .buttons .btn {
@@ -1223,7 +1279,9 @@
 /* Extra small devices (360px and below) */
 @media (max-width: 360px) {
     .header .title {
-        font-size: 15px;
+        font-size: 18px !important;
+        white-space: nowrap;
+        text-align: center;
     }
     
     .header .buttons .btn {
