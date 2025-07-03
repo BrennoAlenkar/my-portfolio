@@ -990,4 +990,19 @@
     box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
 }
 
+/* Reduzir espaçamento entre seção de contato e footer */
+#contact {
+    padding-bottom: 2.5rem !important; /* Reduzido de 5rem para 2.5rem */
+}
+
+.page-footer {
+    margin-top: 0 !important;
+    padding-top: 2.5rem !important; /* Reduzido se necessário */
+}
+
+/* Garantir que não haja espaço extra */
+#contact + .page-footer {
+    margin-top: 0 !important;
+}
+
 
