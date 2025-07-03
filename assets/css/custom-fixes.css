@@ -806,8 +806,8 @@
 
 .card-title-icon {
     color: #222222 !important;
-    font-size: 1.25rem;
-    font-weight: 600;
+    font-size: 1.1rem;
+    font-weight: 500;
     margin-bottom: 0.5rem;
     text-align: center;
 }
@@ -857,7 +857,7 @@
     }
     
     .card-title-icon {
-        font-size: 1.1rem;
+        font-size: 1rem;
     }
     
     .card-course-name {
