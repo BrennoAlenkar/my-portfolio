@@ -128,6 +128,11 @@
     color: white !important;
 }
 
+.professional-btn-primary:focus {
+    color: white !important;
+    box-shadow: 0 0 0 0.2rem rgba(138, 43, 226, 0.25);
+}
+
 .professional-btn-dark {
     background: var(--pro-dark) !important;
     border: 2px solid var(--pro-border) !important;
