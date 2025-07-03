@@ -12,25 +12,7 @@
 }
 
 /* Animação da imagem - efeito flutuante simples */
-.header .img-holder img {
-    animation: float 3s ease-in-out infinite;
-    transition: transform 0.3s ease;
-}
-
-@keyframes float {
-    0%, 100% {
-        transform: translateY(0px);
-    }
-    50% {
-        transform: translateY(-10px);
-    }
-}
-
-/* Efeito hover na imagem */
-.header .img-holder img:hover {
-    transform: scale(1.05) translateY(-5px);
-    transition: transform 0.3s ease;
-}
+/* Animação da foto removida - versão otimizada está mais abaixo */
 
 /* Animação suave para elementos com scroll-effect */
 .scroll-effect {
@@ -98,13 +80,13 @@
         transform: translateY(0px);
     }
     50% {
-        transform: translateY(-10px);
+        transform: translateY(-15px);
     }
 }
 
 /* Efeito hover na imagem */
 .header .img-holder img:hover {
-    transform: scale(1.05) translateY(-5px);
+    transform: scale(1.08) translateY(-8px);
     transition: transform 0.3s ease;
 }
 
@@ -693,18 +675,37 @@
 /* Certificate Cards Layout */
 .custom-card {
     height: 100%;
-    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.05) 100%);
-    border: 1px solid rgba(255, 255, 255, 0.2) !important;
-    border-radius: 15px !important;
-    transition: all 0.3s ease;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.15) !important;
+    border-radius: 18px !important;
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
     overflow: hidden;
     min-height: 180px;
+    position: relative;
+    backdrop-filter: blur(10px);
+}
+
+.custom-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background: linear-gradient(90deg, #075FE4, #4A90E2, #075FE4);
+    opacity: 0;
+    transition: opacity 0.3s ease;
 }
 
 .custom-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
-    border-color: rgba(7, 95, 228, 0.4) !important;
+    transform: translateY(-8px) scale(1.02);
+    box-shadow: 0 15px 35px rgba(255, 255, 255, 0.1), 0 5px 15px rgba(0, 0, 0, 0.1);
+    border-color: rgba(255, 255, 255, 0.3) !important;
+    background: rgba(255, 255, 255, 0.08);
+}
+
+.custom-card:hover::before {
+    opacity: 1;
 }
 
 .custom-card .card-body {
@@ -723,14 +724,16 @@
 }
 
 .card-icon i {
-    font-size: 2.5rem;
+    font-size: 2.8rem;
     color: #075FE4;
-    transition: all 0.3s ease;
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    filter: drop-shadow(0 2px 4px rgba(7, 95, 228, 0.2));
 }
 
 .custom-card:hover .card-icon i {
-    transform: scale(1.1);
-    text-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
+    transform: scale(1.15) rotate(5deg);
+    color: #4A90E2;
+    filter: drop-shadow(0 4px 12px rgba(7, 95, 228, 0.4));
 }
 
 .card-title-icon {
@@ -924,6 +927,7 @@
 .page-footer {
     margin-top: 0 !important;
     padding-top: 2.5rem !important; /* Reduzido se necessário */
+    border-bottom: 7px solid #075FE4 !important; /* Cor personalizada para a linha do footer */
 }
 
 /* Garantir que não haja espaço extra */
