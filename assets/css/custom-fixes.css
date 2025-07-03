@@ -309,8 +309,46 @@
     justify-content: flex-start;
 }
 
-.footer .socials {
-    justify-content: center;
+/* Garantir que os ícones sociais fiquem na mesma linha */
+.footer .socials,
+.page-footer .socials {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    flex-wrap: nowrap !important;
+    gap: 10px !important;
+    margin-left: auto !important;
+    max-width: none !important;
+}
+
+.footer .socials .social-item,
+.page-footer .socials .social-item {
+    margin: 0 !important;
+    margin-left: 0 !important;
+    flex-shrink: 0 !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    vertical-align: middle !important;
+    float: none !important;
+}
+
+/* Estilos específicos para melhor alinhamento dos ícones no footer */
+.page-footer .socials {
+    line-height: 1;
+    height: auto;
+}
+
+.page-footer .socials .social-item {
+    position: relative;
+    top: 0;
+    vertical-align: top;
+    float: none;
+}
+
+.page-footer .socials .social-item i {
+    display: block;
+    line-height: 1;
 }
 
 /* Melhorar visual dos ícones sociais */
@@ -396,9 +434,11 @@
         margin-top: 2rem;
     }
     
-    .footer .socials {
+    .footer .socials,
+    .page-footer .socials {
         justify-content: center;
         margin-top: 1rem;
+        gap: 8px;
     }
     
     .social-item {
@@ -427,6 +467,26 @@
 
 .page-footer .col-sm-6:last-child {
     text-align: center;
+}
+
+/* Garantir que os ícones sociais fiquem na mesma linha */
+.page-footer .socials {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+    gap: 10px;
+    margin-left: auto;
+    max-width: none;
+}
+
+.page-footer .socials .social-item {
+    margin: 0;
+    flex-shrink: 0;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    vertical-align: middle;
 }
 
 @media (max-width: 576px) {
