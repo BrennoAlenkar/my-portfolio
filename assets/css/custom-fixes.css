@@ -910,4 +910,10 @@
     margin-top: 30px;
 }
 
+/* Justificar o parágrafo de descrição no header */
+.header-description {
+    text-align: justify;
+    line-height: 1.6;
+}
+
 
