@@ -879,3 +879,73 @@
         font-size: 1rem;
     }
 }
+
+/* Elemento decorativo de fundo no header */
+.header .infos {
+    position: relative;
+    z-index: 2;
+}
+
+.header .infos::before {
+    content: '';
+    position: absolute;
+    top: -50px;
+    left: -80px;
+    width: 300px;
+    height: 300px;
+    background: linear-gradient(135deg, rgba(71, 216, 224, 0.1) 0%, rgba(42, 122, 228, 0.08) 100%);
+    border-radius: 50%;
+    z-index: -1;
+    animation: pulse-background 4s ease-in-out infinite;
+    filter: blur(1px);
+}
+
+.header .infos::after {
+    content: '';
+    position: absolute;
+    top: 100px;
+    right: -60px;
+    width: 200px;
+    height: 200px;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 50%;
+    z-index: -1;
+    animation: float-background 3s ease-in-out infinite reverse;
+}
+
+@keyframes pulse-background {
+    0%, 100% {
+        transform: scale(1);
+        opacity: 0.6;
+    }
+    50% {
+        transform: scale(1.1);
+        opacity: 0.8;
+    }
+}
+
+@keyframes float-background {
+    0%, 100% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-15px);
+    }
+}
+
+/* Responsividade para os elementos de fundo */
+@media (max-width: 768px) {
+    .header .infos::before {
+        width: 200px;
+        height: 200px;
+        top: -30px;
+        left: -40px;
+    }
+    
+    .header .infos::after {
+        width: 150px;
+        height: 150px;
+        top: 80px;
+        right: -30px;
+    }
+}
