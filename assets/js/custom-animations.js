@@ -27,9 +27,9 @@ document.addEventListener('DOMContentLoaded', function() {
             setTimeout(() => {
                 element.style.opacity = '1';
                 element.style.transform = 'translateY(0)';
-            }, index * 200);
+            }, index * 100);
         });
-    }, 300);
+    }, 150);
 });
 
 // Inicializar elementos do header com estado oculto
@@ -38,7 +38,7 @@ document.addEventListener('DOMContentLoaded', function() {
     headerElements.forEach(element => {
         element.style.opacity = '0';
         element.style.transform = 'translateY(20px)';
-        element.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+        element.style.transition = 'opacity 0.4s ease, transform 0.4s ease';
     });
 });
 
@@ -119,10 +119,10 @@ function animateSkillsBadges() {
         badge.style.transform = 'translateY(20px)';
         
         setTimeout(() => {
-            badge.style.transition = 'all 0.6s ease';
+            badge.style.transition = 'all 0.4s ease';
             badge.style.opacity = '1';
             badge.style.transform = 'translateY(0)';
-        }, index * 100);
+        }, index * 50);
     });
 }
 

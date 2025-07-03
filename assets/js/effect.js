@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', function() {
             if (entry.isIntersecting) {
                 setTimeout(() => {
                     entry.target.classList.add('visible');
-                }, index * 100); // Atraso de 100ms entre cada item
+                }, index * 50); // Atraso de 50ms entre cada item
                 observer.unobserve(entry.target); // Para observar apenas uma vez
             }
         });
