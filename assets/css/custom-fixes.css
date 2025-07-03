@@ -779,82 +779,80 @@
     min-height: 180px;
 }
 
+/* Garantir visibilidade dos cards de certificados */
+.custom-card {
+    display: block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+    height: 100% !important;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.05) 100%) !important;
+    border: 1px solid rgba(255, 255, 255, 0.2) !important;
+    border-radius: 15px !important;
+    transition: all 0.3s ease;
+    overflow: hidden;
+    min-height: 180px;
+}
+
+.custom-card .card-body {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
+    height: 100% !important;
+    padding: 1.5rem !important;
+    text-align: center !important;
+}
+
+.card-icon {
+    display: block !important;
+    margin-bottom: 1rem !important;
+    margin-top: -0.5rem !important;
+}
+
+.card-icon i {
+    font-size: 2.5rem !important;
+    color: #075FE4 !important;
+    transition: all 0.3s ease;
+    display: inline-block !important;
+}
+
+.card-title-icon {
+    color: #222222 !important;
+    font-size: 1.1rem !important;
+    font-weight: 500 !important;
+    margin-bottom: 0.5rem !important;
+    text-align: center !important;
+    display: block !important;
+}
+
+.card-course-name {
+    color: #888888 !important;
+    font-size: 0.9rem !important;
+    font-weight: 400 !important;
+    text-align: center !important;
+    margin-bottom: 0 !important;
+    line-height: 1.4 !important;
+    display: block !important;
+}
+
+.card-link {
+    text-decoration: none !important;
+    display: block !important;
+    height: 100% !important;
+    transition: all 0.3s ease;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
 .custom-card:hover {
     transform: translateY(-5px);
     box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
     border-color: rgba(7, 95, 228, 0.4) !important;
 }
 
-.custom-card .card-body {
-    padding: 1.5rem;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100%;
-}
-
-.card-icon {
-    margin-bottom: 1rem;
-    margin-top: -0.5rem;
-}
-
-.card-icon i {
-    font-size: 2.5rem;
-    color: #fff;
-    transition: all 0.3s ease;
-}
-
 .custom-card:hover .card-icon i {
     transform: scale(1.1);
     text-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
-}
-
-.card-title-icon {
-    color: #222222 !important;
-    font-size: 1.1rem;
-    font-weight: 500;
-    margin-bottom: 0.5rem;
-    text-align: center;
-}
-
-.card-course-name {
-    color: #444444 !important;
-    font-size: 0.95rem;
-    font-weight: 400;
-    text-align: center;
-    margin-bottom: 0;
-    line-height: 1.4;
-}
-
-.card-link {
-    text-decoration: none;
-    display: block;
-    height: 100%;
-    transition: all 0.3s ease;
-    border-radius: 15px;
-    overflow: hidden;
-}
-
-.card-link:hover {
-    text-decoration: none;
-    outline: none;
-}
-
-/* Remover outline e focus indesejados nos cards */
-.card-link:focus,
-.card-link:active,
-.custom-card:focus,
-.custom-card:active {
-    outline: none !important;
-    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2) !important;
-}
-
-.card-link:focus .custom-card,
-.card-link:active .custom-card {
-    border-color: rgba(7, 95, 228, 0.4) !important;
-    box-shadow: 0 8px 25px rgba(7, 95, 228, 0.15) !important;
 }
 
 /* Specific icon colors */
