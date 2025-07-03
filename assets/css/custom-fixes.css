@@ -782,7 +782,7 @@
 .custom-card:hover {
     transform: translateY(-5px);
     box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
-    border-color: rgba(255, 255, 255, 0.4) !important;
+    border-color: rgba(7, 95, 228, 0.4) !important;
 }
 
 .custom-card .card-body {
@@ -832,10 +832,29 @@
     text-decoration: none;
     display: block;
     height: 100%;
+    transition: all 0.3s ease;
+    border-radius: 15px;
+    overflow: hidden;
 }
 
 .card-link:hover {
     text-decoration: none;
+    outline: none;
+}
+
+/* Remover outline e focus indesejados nos cards */
+.card-link:focus,
+.card-link:active,
+.custom-card:focus,
+.custom-card:active {
+    outline: none !important;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2) !important;
+}
+
+.card-link:focus .custom-card,
+.card-link:active .custom-card {
+    border-color: rgba(7, 95, 228, 0.4) !important;
+    box-shadow: 0 8px 25px rgba(7, 95, 228, 0.15) !important;
 }
 
 /* Specific icon colors */
@@ -946,8 +965,8 @@
 }
 
 .custom-card:hover {
-    border-color: #075FE4 !important;
-    box-shadow: 0 8px 25px rgba(7, 95, 228, 0.3) !important;
+    border-color: rgba(7, 95, 228, 0.4) !important;
+    box-shadow: 0 8px 25px rgba(7, 95, 228, 0.15) !important;
 }
 
 /* Equalizar espaçamentos dos elementos de texto no header */
