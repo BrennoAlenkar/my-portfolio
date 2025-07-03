@@ -804,3 +804,19 @@
         font-size: 0.9rem;
     }
 }
+
+/* Existing styles... */
+
+.contact-description {
+    color: #333333 !important;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    font-weight: 400;
+}
+
+/* Responsive contact description */
+@media (max-width: 768px) {
+    .contact-description {
+        font-size: 1rem;
+    }
+}
