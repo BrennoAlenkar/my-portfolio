@@ -1,14 +1,6 @@
 function typeWriter(text, elementId, speed, callback) {
     let i = 0;
     const element = document.getElementById(elementId);
-    
-    if (!element) {
-        console.error('Elemento não encontrado:', elementId);
-        return;
-    }
-    
-    // Limpa o conteúdo antes de começar
-    element.innerHTML = '';
 
     function type() {
         if (i < text.length) {
@@ -18,7 +10,7 @@ function typeWriter(text, elementId, speed, callback) {
         } else {
             setTimeout(() => {
                 element.innerHTML = '';
-                if (callback) callback();
+                callback();
             }, 1500);
         }
     }
@@ -29,19 +21,11 @@ function typeWriter(text, elementId, speed, callback) {
 document.addEventListener('DOMContentLoaded', () => {
     const mainText = "I'm a Software Engineer.";
     const speed = 100;
-    const element = document.getElementById('marquee-text');
-    
-    // Garante que o elemento esteja vazio no início
-    if (element) {
-        element.innerHTML = '';
-        
-        function restartText() {
-            typeWriter(mainText, 'marquee-text', speed, restartText);
-        }
 
-        // Inicia com o texto principal e continua repetindo apenas ele
+    function restartText() {
         typeWriter(mainText, 'marquee-text', speed, restartText);
-    } else {
-        console.error('Elemento marquee-text não encontrado');
     }
+
+    // Inicia com o texto principal e continua repetindo apenas ele
+    typeWriter(mainText, 'marquee-text', speed, restartText);
 });
