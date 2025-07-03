@@ -517,3 +517,88 @@ p {
     width: auto;
     min-width: max-content;
 }
+
+/* Progress bars personalizadas */
+.progress {
+    background-color: var(--border-color);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.progress-bar {
+    transition: width 2s ease-in-out;
+    border-radius: 10px;
+    position: relative;
+}
+
+.progress-bar::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+    animation: shimmer 2s infinite;
+}
+
+@keyframes shimmer {
+    0% { transform: translateX(-100%); }
+    100% { transform: translateX(100%); }
+}
+
+/* Melhorias nos cards de habilidades */
+.custom-card .card-body {
+    padding: 2rem 1.5rem;
+    transition: all 0.3s ease;
+}
+
+.custom-card:hover .card-body {
+    transform: translateY(-5px);
+}
+
+.custom-card .card-title-icon {
+    font-weight: 600;
+    color: var(--text-primary) !important;
+}
+
+/* Botões de certificação */
+.btn-outline-secondary {
+    background: transparent !important;
+    color: var(--text-secondary) !important;
+    border: 2px solid var(--border-color) !important;
+    border-radius: 25px;
+    font-weight: 500;
+    padding: 8px 16px;
+    transition: all 0.3s ease;
+}
+
+.btn-outline-secondary:hover {
+    background: var(--gradient-primary) !important;
+    color: white !important;
+    border-color: transparent !important;
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-lg);
+}
+
+/* Animação de entrada para os cards */
+.custom-card {
+    transform: translateY(20px);
+    opacity: 0;
+    transition: all 0.6s ease;
+}
+
+.scroll-effect.show .custom-card {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+/* Delay escalonado para os cards */
+.scroll-effect.show .custom-card:nth-child(1) { transition-delay: 0.1s; }
+.scroll-effect.show .custom-card:nth-child(2) { transition-delay: 0.2s; }
+.scroll-effect.show .custom-card:nth-child(3) { transition-delay: 0.3s; }
+.scroll-effect.show .custom-card:nth-child(4) { transition-delay: 0.4s; }
+.scroll-effect.show .custom-card:nth-child(5) { transition-delay: 0.5s; }
+.scroll-effect.show .custom-card:nth-child(6) { transition-delay: 0.6s; }
+.scroll-effect.show .custom-card:nth-child(7) { transition-delay: 0.7s; }
+.scroll-effect.show .custom-card:nth-child(8) { transition-delay: 0.8s; }
