@@ -8,10 +8,10 @@
     --warning-color: #f59e0b;
     
     /* Fundos */
-    --dark-bg: #0f172a;
-    --darker-bg: #020617;
-    --card-bg: #1e293b;
-    --surface-bg: #334155;
+    --dark-bg: #0a0a0a;
+    --darker-bg: #000000;
+    --card-bg: #111111;
+    --surface-bg: #1a1a1a;
     
     /* Textos */
     --text-primary: #f8fafc;
@@ -20,8 +20,8 @@
     --text-accent: #06b6d4;
     
     /* Bordas */
-    --border-color: #334155;
-    --border-light: #475569;
+    --border-color: #222222;
+    --border-light: #333333;
     
     /* Gradientes */
     --gradient-primary: linear-gradient(135deg, #6366f1 0%, #8b5cf6 100%);
@@ -77,7 +77,7 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Navegação */
 .navbar {
-    background: rgba(15, 23, 42, 0.95) !important;
+    background: rgba(0, 0, 0, 0.95) !important;
     backdrop-filter: blur(10px);
     border-bottom: 1px solid var(--border-color);
     box-shadow: var(--shadow-lg);
@@ -117,7 +117,7 @@ h1, h2, h3, h4, h5, h6 {
     left: 0;
     right: 0;
     bottom: 0;
-    background: radial-gradient(circle at 30% 50%, rgba(99, 102, 241, 0.1) 0%, transparent 50%);
+    background: radial-gradient(circle at 30% 50%, rgba(99, 102, 241, 0.08) 0%, transparent 50%);
     pointer-events: none;
 }
 
@@ -238,7 +238,7 @@ h1, h2, h3, h4, h5, h6 {
     left: 0;
     right: 0;
     bottom: 0;
-    background: linear-gradient(180deg, transparent 0%, rgba(30, 41, 59, 0.3) 50%, transparent 100%);
+    background: linear-gradient(180deg, transparent 0%, rgba(17, 17, 17, 0.3) 50%, transparent 100%);
     pointer-events: none;
 }
 
