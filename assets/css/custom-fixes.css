@@ -539,8 +539,8 @@
 
 /* Responsividade para skills */
 @media (max-width: 768px) {
-    .skills-highlights {
-        padding: 1rem;
+    .certificates-description {
+        font-size: 1.1rem;
     }
     
     .skill-badge {
@@ -550,6 +550,22 @@
     
     .skill-item {
         padding: 0.8rem;
+    }
+    
+    .custom-card {
+        min-height: 160px;
+    }
+    
+    .card-icon i {
+        font-size: 2rem;
+    }
+    
+    .card-title-icon {
+        font-size: 1rem;
+    }
+    
+    .card-course-name {
+        font-size: 0.8rem;
     }
 }
 
@@ -677,18 +693,13 @@
 
 /* Certificates Section Improvements */
 .certificates-description {
-    color: #ffffff !important;
-    background: linear-gradient(135deg, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.5) 100%);
-    padding: 1.5rem;
-    border-radius: 10px;
-    backdrop-filter: blur(10px);
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
-    font-size: 1.1rem;
+    color: #e0e0e0 !important;
+    font-size: 1.2rem;
     font-weight: 500;
     line-height: 1.6;
     margin: 0 auto;
     max-width: 800px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
 }
 
 /* Certificate Cards Layout */
@@ -704,7 +715,7 @@
 
 .custom-card:hover {
     transform: translateY(-5px);
-    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.4);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
     border-color: rgba(255, 255, 255, 0.4) !important;
 }
 
@@ -775,8 +786,7 @@
 /* Responsive adjustments */
 @media (max-width: 768px) {
     .certificates-description {
-        font-size: 1rem;
-        padding: 1rem;
+        font-size: 1.1rem;
     }
     
     .custom-card {
