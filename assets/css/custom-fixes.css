@@ -745,21 +745,21 @@
 }
 
 .card-title-icon {
-    color: #fff !important;
-    font-size: 1.1rem;
+    color: #222222 !important;
+    font-size: 1.25rem;
     font-weight: 600;
     margin-bottom: 0.5rem;
     text-align: center;
 }
 
 .card-course-name {
-    color: #ccc !important;
-    font-size: 0.85rem;
+    color: #444444 !important;
+    font-size: 0.95rem;
     font-weight: 400;
     text-align: center;
     margin-bottom: 0;
     line-height: 1.4;
-    opacity: 0.8;
+    opacity: 0.9;
 }
 
 .card-link {
@@ -797,10 +797,10 @@
     }
     
     .card-title-icon {
-        font-size: 1rem;
+        font-size: 1.1rem;
     }
     
     .card-course-name {
-        font-size: 0.8rem;
+        font-size: 0.9rem;
     }
 }
