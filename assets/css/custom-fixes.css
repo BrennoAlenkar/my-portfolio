@@ -880,6 +880,24 @@
     font-weight: 400;
 }
 
+/* Header Description */
+.header-description {
+    color: #6c757d;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+    font-weight: 400;
+    max-width: 90%;
+}
+
+@media (max-width: 768px) {
+    .header-description {
+        font-size: 1rem;
+        text-align: center;
+        max-width: 100%;
+    }
+}
+
 /* Responsive contact description */
 @media (max-width: 768px) {
     .contact-description {
