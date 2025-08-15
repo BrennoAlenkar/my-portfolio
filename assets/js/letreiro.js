@@ -1,31 +1,33 @@
-function typeWriter(text, elementId, speed, callback) {
-    let i = 0;
-    const element = document.getElementById(elementId);
+document.addEventListener('DOMContentLoaded', () => {
+    const textos = [
+        "Full Stack Developer.",
+        "Especialista em JavaScript.",
+        "React.js & PHP.",
+        "Desenvolvedor Web."
+    ];
+    const elementId = 'marquee-text';
+    const speed = 80;
+    const delay = 1500;
+    let fraseAtual = 0;
 
-    function type() {
+    function typeWriter(text, element, i, callback) {
         if (i < text.length) {
-            element.innerHTML += text.charAt(i);
-            i++;
-            setTimeout(type, speed);
+            element.innerHTML = text.substring(0, i + 1);
+            setTimeout(() => typeWriter(text, element, i + 1, callback), speed);
         } else {
-            setTimeout(() => {
-                element.innerHTML = '';
-                callback();
-            }, 1500);
+            setTimeout(callback, delay);
         }
     }
 
-    type();
-}
-
-document.addEventListener('DOMContentLoaded', () => {
-    const mainText = "I'm a Software Engineer.";
-    const speed = 100;
-
-    function restartText() {
-        typeWriter(mainText, 'marquee-text', speed, restartText);
+    function startType() {
+        const element = document.getElementById(elementId);
+        if (!element) return;
+        element.innerHTML = '';
+        typeWriter(textos[fraseAtual], element, 0, () => {
+            fraseAtual = (fraseAtual + 1) % textos.length;
+            startType();
+        });
     }
 
-    // Inicia com o texto principal e continua repetindo apenas ele
-    typeWriter(mainText, 'marquee-text', speed, restartText);
+    startType();
 });
